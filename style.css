@@ -1,0 +1,178 @@
+@font-face{
+    font-family: 'Gilroy';
+    src: url(font/Gilroy-Medium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Gilroy';
+    src: url(font/Gilroy-Semibold.ttf) format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Gilroy';
+    src: url(font/Gilroy-font.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1150px;
+    height: 44px;
+    margin: 12px auto 0;
+
+}
+
+nav{
+    display: flex;
+    gap: 40px;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: #141414;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: normal;
+
+}
+
+ .active-link{
+        color: #0065FE;
+ }
+ 
+ .features-link{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+ }
+
+.features-link img{
+    width: 12px;
+    height: 6px;
+}
+
+
+.auth-button{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.auth-button a{
+    text-decoration: none;
+    color: #0065FE;
+    font-family:'Gilroy', sans-serif;
+    font-weight:400;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0;
+}
+
+.auth-button button{
+    background-color: #0065FE;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 100px;
+    box-sizing: border-box;
+    width: 142px;
+    height: 44px;
+    line-height: 12px;
+    letter-spacing: 0;
+    font-family:'Gilroy', sans-serif;
+    font-weight: 400;
+    
+}
+
+.auth-button a,
+.auth-button button{
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+   
+}
+
+
+.hero{
+    text-align: center;
+}
+.hero h1 {
+    
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.5;
+    max-width: 950px;
+    margin: 0 auto;
+    color: #141414;
+
+}
+
+.hero p {
+    
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 781px;
+    margin: 32px auto 32px;
+    text-align: center;
+    color: #141414;
+
+}
+.hero-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600
+
+
+}
+
+.hero-buttons a{
+    text-decoration:none;
+    color: #0065FE;
+    font-family:'Gilroy', sans-serif;
+    font-weight:400;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0;
+
+}
+
+.hero-buttons button{
+    background-color:#0065FE;
+    color: #FFFFFF;
+    border:none;
+    padding: 12px 24px;
+    border-radius: 100px;
+    box-sizing: border-box;
+    width: 142px;
+    height: 44px;
+    line-height: 12px;
+    letter-spacing: 0;
+    font-family:'Gilroy', sans-serif;
+    font-weight: 400;
+}
+
+.highlighted{
+    color: #0065FE;
+    position: relative;
+    white-space:nowrap;
+    
+}
+.highlighted img{
+color: #005AE2;
+position: absolute;
+width: 173.63px;
+ height: 19.91px;
+ left: 25%;
+ top:100%;
+}
