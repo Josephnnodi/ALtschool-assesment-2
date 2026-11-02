@@ -38,6 +38,7 @@ html {
 }
 
 body {
+    min-width: 1440px;
     margin: 0;
     color: var(--ink);
     background: #fff;
@@ -125,7 +126,7 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 32px;
-    width: min(1150px, calc(100% - 48px));
+    width: 1150px;
     min-height: 44px;
     margin: 12px auto 0;
 }
@@ -224,7 +225,7 @@ header > nav {
 .chain-illustration {
     position: relative;
     isolation: isolate;
-    width: min(768px, calc(100% - 48px));
+    width: 768px;
     margin: 80px auto 0;
     padding-bottom: 168px;
 }
@@ -278,7 +279,7 @@ header > nav {
     position: absolute;
     bottom: 24px;
     left: 50%;
-    width: min(956px, 86vw);
+    width: 956px;
     height: 48px;
     border-radius: 50%;
     background: #e7ecf1;
@@ -771,295 +772,6 @@ footer {
 footer::before {
     top: 100px;
     left: -400px;
-}
-
-@media (max-width: 1100px) {
-    header {
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
-    header > nav {
-        order: 3;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 100%;
-        gap: 16px 32px;
-    }
-
-    .hero {
-        margin-top: 72px;
-    }
-
-    .statistics {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .statistics h2 br {
-        display: none;
-    }
-
-    .features {
-        grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr);
-        gap: 32px;
-        padding: 0 24px;
-    }
-
-    .features-list {
-        gap: 48px 24px;
-    }
-
-    h2 {
-        font-size: 34px;
-    }
-
-    .features-intro h2 {
-        font-size: 34px;
-    }
-
-    .feature h3 {
-        font-size: 26px;
-    }
-
-    .pricing-card, .pricing-card.professional {
-        padding-right: 24px;
-        padding-left: 24px;
-    }
-
-    .pricing-card .plan-price {
-        font-size: 34px;
-    }
-
-    footer {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-brand {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 24px;
-    }
-
-    .social-links {
-        margin-top: 0;
-    }
-}
-
-@media (max-width: 700px) {
-    h2 {
-        font-size: 30px;
-    }
-
-    .features-intro h2 {
-        font-size: 30px;
-        letter-spacing: normal;
-    }
-
-    .statistics h2 br {
-        display: initial;
-    }
-
-    header {
-        width: calc(100% - 32px);
-    }
-
-    header > a img {
-        width: 120px;
-    }
-
-    header > nav {
-        gap: 12px 20px;
-        font-size: 15px;
-    }
-
-    .auth-button {
-        gap: 12px;
-        font-size: 14px;
-    }
-
-    .auth-button button {
-        min-width: 0;
-        padding: 10px 16px;
-    }
-
-    .hero {
-        margin-top: 48px;
-        padding: 0 20px;
-    }
-
-    .hero h1 {
-        font-size: clamp(28px, 6.5vw, 42px);
-        line-height: 1.65;
-    }
-
-    .highlighted img {
-        width: 55%;
-        height: 14px;
-    }
-
-    .hero > p {
-        margin-top: 28px;
-        font-size: 16px;
-        line-height: 26px;
-    }
-
-    .hero-buttons {
-        gap: 32px;
-    }
-
-    .chain-illustration {
-        margin-top: 64px;
-        padding-bottom: 120px;
-    }
-
-    .chain-box {
-        min-height: 0;
-        padding: 32px 20px;
-    }
-
-    .chain-image {
-        margin-bottom: 24px;
-    }
-
-    .chain-box p {
-        font-size: 14px;
-    }
-
-    .statistics {
-        padding: 40px 24px;
-    }
-
-    .statistics-list {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 32px 24px;
-    }
-
-    .features {
-        grid-template-columns: 1fr;
-        gap: 48px;
-        margin: 72px auto;
-    }
-
-    .features-intro p {
-        margin-left: 0;
-    }
-
-    .features-list {
-        gap: 40px 24px;
-    }
-
-    .feature::before {
-        margin-bottom: 20px;
-    }
-
-    .feature h3 {
-        font-size: 24px;
-    }
-
-    .pricing {
-        padding: 24px 24px 72px;
-    }
-
-    .pricing-plans {
-        grid-template-columns: 1fr;
-        gap: 24px;
-        max-width: 440px;
-        margin-top: 40px;
-    }
-
-    .pricing-card, .pricing-card.professional, .pricing-card:last-child {
-        min-height: 0;
-        padding: 36px;
-        border-radius: 12px;
-    }
-
-    .pricing-card.professional {
-        padding-top: 48px;
-        padding-bottom: 48px;
-    }
-
-    .pricing-buttons {
-        flex-wrap: wrap;
-        margin-top: 40px;
-    }
-
-    .url-shortener {
-        padding: 56px 20px;
-    }
-
-    .shortener-form {
-        padding: 28px 20px;
-    }
-
-    .shortener-form input, .shortener-form select {
-        padding: 12px;
-    }
-
-    .faqs {
-        padding: 48px 24px 72px;
-    }
-
-    .faq-list {
-        margin-top: 32px;
-    }
-
-    .faq-item h3, .faq-item summary {
-        gap: 20px;
-        font-size: 18px;
-        line-height: 28px;
-    }
-
-    .faq-item p {
-        line-height: 28px;
-    }
-
-    .get-started {
-        padding: 64px 24px;
-    }
-
-    .get-started > a {
-        margin-top: 32px;
-    }
-
-    footer {
-        padding-top: 56px;
-        gap: 40px;
-    }
-
-    .footer-brand {
-        align-items: flex-start;
-        flex-direction: column;
-    }
-
-    .footer-links {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 32px 24px;
-    }
-
-    .footer-bottom {
-        justify-content: flex-start;
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 380px) {
-    .features-list, .shortener-options {
-        grid-template-columns: 1fr;
-    }
-
-    header {
-        gap: 16px 8px;
-    }
-
-    header > a img {
-        width: 105px;
-    }
-
-    .auth-button {
-        gap: 8px;
-    }
 }
 
 @media (prefers-reduced-motion: reduce) {
