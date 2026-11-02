@@ -100,13 +100,14 @@ nav a{
 
 .hero{
     text-align: center;
+    margin-top: 100px;
 }
 .hero h1 {
     
     font-family: 'Gilroy', sans-serif;
     font-weight: 700;
     font-size: 48px;
-    line-height: 1.5;
+    line-height: 1.8;
     max-width: 950px;
     margin: 0 auto;
     color: #141414;
@@ -175,4 +176,22 @@ width: 173.63px;
  height: 19.91px;
  left: 25%;
  top:100%;
+}
+
+.chain-illustration{
+    position: relative;
+    width: 833px;
+    min-height: 337px;
+    margin: 80px auto 0;
+
+    
+}
+
+.chain-background{
+    position: absolute;
+    width: 238.55px;
+    height: 251.2px;
+    left: 0;
+    top: 0;
+    z-index: 0;
 }
